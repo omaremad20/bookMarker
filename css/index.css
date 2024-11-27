@@ -1,0 +1,194 @@
+:root
+{
+    --PT-Sans-Caption :  "PT Sans Caption", sans-serif ;
+    --Righteous : "Righteous", sans-serif ; 
+    --Pacifico :  "Pacifico", cursive ;
+    --body-Color : #F7ECDE ;
+    --hover-Title : #FEC260 ;
+    --first-Title-Color : #352E28 ;
+    --sumbit-Btn-Bg-color : #BB4120 ;
+    --visit-Btn-Bg-Color: #8A9E23 ;
+    --delete-Btn-Bg-Color : #D30820 ;
+}
+body
+{
+    background-color: var(--body-Color);
+}
+h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.title
+{
+    font-family: var(--Pacifico);
+    font-weight: 500;
+    color: var(--first-Title-Color);
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    text-align: center;
+    position: relative;
+}
+span.title::after
+{
+    content: '';
+    position: absolute;
+    background-color: var(--hover-Title);
+    width: 100%;
+    height: 50%;
+    /* text-align: center; */
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transform: translateX(-50%);
+    transition: height ease-in-out 0.3s , top ease-in-out 0.3s;
+}
+span.title:hover::after
+{
+     height: 70%;
+     top: 30%;
+}
+main
+{
+    padding-block: 4rem;
+}
+.horzontialRule
+{
+    border: 1px black dashed;
+    margin-top: 4rem;
+}
+section.title
+{
+    
+    margin-top: 1.5rem;
+}
+i.fa-bookmark
+{
+    color: #3FA55B;
+    font-size: 1.5625rem;
+    font-weight: 900;
+}
+section.title h2
+{
+    font-family: var(--Righteous);
+    font-weight: 500;
+    line-height: 1.875rem;
+    font-size: 1.5625rem;
+    margin-inline: 0.5rem;
+    margin-bottom: 0;
+    
+}
+.desctiption
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button#btnSumbit
+{
+    width: 12.5%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#head
+{
+    height: 2.5rem;
+    background-color: #fff;
+    font-family: var(--PT-Sans-Caption);
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+    line-height: 1.5rem;
+    border-bottom: 1px solid #352E28;
+    display: flex;
+    align-items: center;
+    /* margin-left: -30px; */
+}
+tr , td 
+{
+    display: flex;
+    justify-content: center;
+}
+.table
+{
+    margin-bottom: 0;
+}
+#TheTable
+{
+    width: 98%;
+}
+span.titleLabel
+{
+    font-family: var(--PT-Sans-Caption);
+    font-weight: 600;
+    color: rgb(33, 37, 41);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+.form-control:focus 
+{
+    border-color: #fec260;
+    box-shadow: 0 0 0 .25rem #fec16052;
+}
+#btnSumbit
+{
+    font-family: var(--PT-Sans-Caption);
+    color: #fff;
+    margin-top: 0.5rem;
+}
+.secondHorzontialRule
+{
+    border: 1px black dashed;
+    margin-top: 1.5rem;
+}
+::selection 
+{
+    background-color: #FEC260; /* لون الخلفية عند التحديد */
+}
+.greenBookMark
+{
+    color: #3FA55B !important;
+}
+.orangeBookMark , .bookmark-2
+{
+    color: #B1AC49 !important;
+}
+
+.btn.btn-success
+{
+    background-color:#8A9E23 !important;
+    border: solid transparent 1px !important;
+    font-family: var(--PT-Sans-Caption);
+    padding-inline: 1rem;
+}
+.btn.btn-success:hover
+{
+    background-color:#a0b82a !important;
+}
+#mainTR
+{
+    font-family: var(--PT-Sans-Caption);
+    text-transform: capitalize;
+}
+/* .btnSearch
+{
+
+    position: absolute;
+    left: -5.1%;
+    width: 5%;
+    background-color: whitesmoke !important;
+    padding-block: 0.275rem;
+    border-color: transparent;
+    transition: background-color ease-in-out 0.3s;
+} */
+/* .btnSearch:hover
+{
+    background-color: #f7ecde85 !important;
+} */
+
+button
+{
+    cursor: pointer !important;
+}

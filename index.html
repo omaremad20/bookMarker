@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet"/>
+    <!-- End-Google-Fonts -->
+    <link rel="shortcut icon" href="images/bookmark.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/Global.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section>
+                <h1><span class="title">Bookmarker</span></h1>
+            </section>
+            <div class="horzontialRule"></div>
+            <section class="title">
+                <div class="container">
+                <div class="desctiption">
+                   
+
+                    <h2 class="text-nowrap  text-center">
+                        <span class="greenBookMark"> <i class="fa-solid fa-bookmark "></i> Bookmark your</span>
+                        <span class="orangeBookMark">favorite sites <i class="fa-solid fa-bookmark bookmark-2"></i></span>
+                    </h2>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><i class="fa-solid fa-book-bookmark"></i><span class="titleLabel">Site Name</span> </label>
+                    <input type="text" onblur="siteNameVaildition(this.value)" class="form-control " id="exampleFormControlInput1" placeholder="Bookmark Name" value = "" autocomplete="off"/>
+                    <p class="text-danger d-none" id="alertVaild"><i class="fa-solid fa-circle-exclamation ms-lg-3"></i> The Name Must Be From 4 To 20 Character...</p>
+                  </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label"><i class="fa-solid fa-link"></i><span class="titleLabel">Site URL</span> </label>
+                    <input type="url" class="form-control" onblur="linkVaildition(this.value)" id="exampleFormControlInput2" placeholder="Website URL" value ="" autocomplete="off"/>
+                    <p class="text-danger d-none" id="alertVaildLink"><i class="fa-solid fa-circle-exclamation ms-lg-3 "></i> Please Put An Vaild Link...</p>
+
+                  </div>
+                  <button onclick="addLinks()" type="button"  class="btn btn-danger " id="btnSumbit" disabled >Sumbit</button> 
+                  <div class="secondHorzontialRule"></div>
+                  <div class="d-flex justify-content-center my-3 align-items-center position-relative">
+                    <input type="search" oninput="searching(this.value)" class="form-control w-50 rounded-4 searchinput" id="exampleFormControlInput3" placeholder="Search With Website Name...">
+                  </div>
+                  </div>
+                </div>
+            </section>
+            <section class="TheTable mt-3">
+                <div id = "TheTable" class="container ">
+
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
+
+<!-- ICONS -->
+<!-- 
+<i class="fa-solid fa-bookmark"></i> 
+<i class="fa-solid fa-book-bookmark"></i>
+<i class="fa-solid fa-link"></i>
+<i class="fa-solid fa-eye"></i>
+<i class="fa-solid fa-trash-can"></i> 
+-->
+ 
+<!-- END-ICONS -->

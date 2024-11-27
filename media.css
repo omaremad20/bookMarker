@@ -1,0 +1,25 @@
+@media all and (width < 992px)
+{
+    h2
+    {
+        font-size: 1.25rem !important;
+    }
+    button#btnSumbit
+    {
+        width: unset;
+    }
+    label.form-label
+    {
+        margin-top: 1.5rem !important;
+    }
+    input[type = "search"]
+    {
+        width: 100% !important;
+    }
+    #head
+    {
+        height: unset;
+    }
+
+
+}
